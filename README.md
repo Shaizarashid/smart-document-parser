@@ -1,10 +1,10 @@
-# 🧠 Smart Document Parser (with Gemini + Streamlit)
+# Smart Document Parser (with Gemini + Streamlit)
 
 This project is a lightweight document parser that extracts structured JSON from PDFs or images using OCR and Gemini's generative AI. It showcases skills in prompt engineering, document ingestion pipelines, and JSON-based output control.
 
 ---
 
-## 🚀 Features
+## Features
 
 - ✅ Upload PDFs or images (JPG/PNG)
 - ✅ Extract text using OCR (`pytesseract`) or native PDF parsing
@@ -14,7 +14,7 @@ This project is a lightweight document parser that extracts structured JSON from
 
 ---
 
-## ⚙️ Setup and Run Instructions
+## Setup and Run Instructions
 
 ### 1. Clone the repository
 
