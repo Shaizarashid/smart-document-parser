@@ -1,0 +1,162 @@
+--- Prompt 1: Initial Prompt ---
+Extract the following fields and return only a valid JSON object:
+
+- Name -> extract from the header mostly
+- Phone number -> wont have a label attached to it everytime
+- Email -> wont have  a direct heading every time
+- LinkedIn
+- Github
+- Address -> wont have a label attached to it always
+- Education
+- Projects
+- Experience or Work Experience
+- Skills and tool / Skills / Tools
+- Achievements
+- Certifications / Certificates / Trainings /Courses
+- Activities
+- Interests
+
+Here is the document text:
+\"\"\"{doc_text}\"\"\"
+Only return the JSON. No explanation.
+
+--- Prompt 2: Consistent phrasing ---
+Extract the following fields and return only a valid JSON object:
+
+- Name -> extract from the header mostly
+- Phone number -> wont have a label attached to it everytime
+- Email -> wont have  a direct heading every time
+- LinkedIn
+- Github
+- Address -> wont have a label attached to it always
+- Education
+- Projects
+- Experience
+- Skills
+- Tools
+- Achievements
+- Certifications
+- Activities
+- Interests
+
+Here is the document text:
+\"\"\"{doc_text}\"\"\"
+Only return the JSON. No explanation.
+
+--- Prompt 3: Stronger Output Constraints ---
+Extract the following fields and return only a valid JSON object:
+
+- Name -> extract from the header mostly
+- Phone number -> wont have a label attached to it everytime
+- Email -> wont have  a direct heading every time
+- LinkedIn
+- Github
+- Address -> wont have a label attached to it always
+- Education
+- Projects
+- Experience
+- Skills
+- Tools
+- Achievements
+- Certifications
+- Activities
+- Interests
+
+Here is the document text:
+\"\"\"{doc_text}\"\"\"
+Return all the information only in the JSON format. Do not add any comments or explanation for anything.
+
+--- Prompt 4: JSON schema guidance ---
+Extract the following fields and return only a valid JSON object:
+
+- Name -> extract from the header mostly
+- Phone number -> wont have a label attached to it everytime
+- Email -> wont have  a direct heading every time
+- LinkedIn
+- Github
+- Address -> wont have a label attached to it always
+- Education
+- Projects
+- Experience
+- Skills
+- Tools
+- Achievements
+- Certifications
+- Activities
+- Interests
+
+Instructions: 
+- Make sure to add all the feilds in the JSON
+- For missing fields, set their value to null
+- For dates or years, separate out the the years into start and end year 
+- If only one year mentioned, consider it a start year
+
+Here is the document text:
+\"\"\"{doc_text}\"\"\"
+Return all the information only in the JSON format. Do not add any comments or explanation for anything.
+
+--- Prompt 5: Less Ambiguous labeling ---
+Extract the following fields and return only a valid JSON object:
+
+- Name 
+- Phone number 
+- Email
+- LinkedIn
+- Github
+- Address 
+- Education
+- Projects
+- Experience
+- Skills
+- Tools
+- Achievements
+- Certifications
+- Activities
+- Interests
+
+Instructions: 
+- Fields may appear under various labels or headings, or without labels at all
+- Make sure to add all the feilds in the JSON
+- For missing fields, set their value to null
+- For dates or years, separate out the the years into start and end year 
+- If only one year mentioned, consider it a start year
+- Output should be raw JSON only — no explanation, no markdown, no extra formatting
+
+Here is the document text:
+\"\"\"{doc_text}\"\"\"
+Return the JSON format below.
+
+--- Prompt 6: Separate out date from year ---
+Extract the following fields and return only a valid JSON object:
+
+- Name 
+- Phone number 
+- Email
+- LinkedIn
+- Github
+- Address 
+- Education
+- Projects
+- Experience
+- Skills
+- Tools
+- Achievements
+- Certifications
+- Activities
+- Interests
+
+Instructions: 
+- Fields may appear under various labels or headings, or without labels at all
+- Make sure to add all the feilds in the JSON
+- For missing fields, set their value to null
+- For years, separate out the the years into start and end year 
+- If only one year mentioned, consider it a start year
+- For dates, separate out the the date into start and end date
+- If only one date mentioned, consider it a start date
+- If both year and date are mentioned, Go with the date
+- Output should be raw JSON only — no explanation, no markdown, no extra formatting
+- If tools are mentioned within the skills, do not include them under the skill section. Only include them under the Tools section
+
+Here is the document text:
+\"\"\"{doc_text}\"\"\"
+Return the JSON format below.
