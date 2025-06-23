@@ -14,27 +14,28 @@ This project is a lightweight document parser that extracts structured JSON from
 
 ---
 
-## Setup and Run Instructions
+## ⚙️ Setup and Run Instructions
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/smart-document-parser.git
+git clone https://github.com/Shaizarashid/smart-document-parser.git
 cd smart-document-parser
+ ```
 
-### 2. Install all Dependencies
+## 2. Install all Dependencies
 
-```bash
 pip install -r requirements.txt
 
-### 3. Run the application
 
-```bash
+## 3. Run the application
+
 streamlit run app.py
 
-### 4. Prompt Optimization
 
-Try out different prompting techniques to fine the one with the best results.
+## 4. Prompt Optimization
+
+Try out different prompting techniques to find the one with the best results.
 
 
 
